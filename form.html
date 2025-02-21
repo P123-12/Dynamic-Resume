@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Input Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Resume Input Form</h2>
+        <form id="resumeForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="profileImage">Upload Profile Image:</label>
+            <input type="file" id="profileImage" accept="image/*">
+
+            <label for="profile">Profile Summary:</label>
+            <textarea id="profile" placeholder="Write your profile summary" required></textarea>
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" placeholder="Enter your contact number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Enter your address" required></textarea>
+
+            <label for="languages">Languages:</label>
+            <input type="text" id="languages" placeholder="e.g., English, Spanish" required>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" placeholder="e.g., Reading, Coding" required>
+
+            <label for="education">Education:</label>
+            <div id="educationContainer">
+                <div class="education-entry">
+                    <label>School:</label>
+                    <input type="text" class="school" placeholder="School Name" required>
+                    <label>Degree:</label>
+                    <input type="text" class="degree" placeholder="Degree" required>
+                    <label>CGPA:</label>
+                    <input type="number" class="CGPA" placeholder="CGPA" required>
+                    <label>Start Date:</label>
+                    <input type="date" class="start-date" required>
+                    <label>End Date:</label>
+                    <input type="date" class="end-date" required>
+                    <button type="button" class="removeEducation">Remove</button>
+                </div>
+            </div>
+            <button type="button" id="addEducation">Add Education</button>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" placeholder="e.g., Java, Python" required>
+
+            <label for="projects">Projects:</label>
+            <textarea id="projects" placeholder="Project details" required></textarea>
+
+            <label for="certifications">Certifications:</label>
+            <textarea id="certifications" placeholder="Certification details" required></textarea>
+
+            <button type="button" id="generateResume">Generate Resume</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

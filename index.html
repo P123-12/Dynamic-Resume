@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="resumeContainer">
+        <header>
+            <h1 id="name">Your Name</h1>
+        </header>
+
+        <main>
+            <div class="column">
+                <div class="image" id="profileDisplay">
+                    <img id="profileImageDisplay"  class="icon">
+                </div>
+
+                <div class="profile">
+                    <h2>PROFILE</h2>
+                    <p id="profile">Your profile summary will appear here.</p>
+                </div>
+
+                <div class="contact">
+                    <h2>CONTACT ME</h2>
+                    <p id="contact">📞 Your contact number</p>
+                    <p id="email">✉️ Your email</p>
+                    <p id="address">🏠 Your address</p>
+                </div>
+
+                <div class="languages">
+                    <h2>LANGUAGES</h2>
+                    <ul id="languages"></ul>
+                </div>
+
+                <div class="hobbies">
+                    <h2>HOBBIES</h2>
+                    <ul id="hobbies"></ul>
+                </div>
+            </div>
+
+            <div class="column1">
+                <section class="education">
+                    <h2>EDUCATION</h2>
+                    <div id="education"></div>
+                </section>
+
+                <section class="skills">
+                    <h2>TECH SKILLS</h2>
+                    <ul id="skills"></ul>
+                </section>
+
+                <section class="projects">
+                    <h2>PROJECTS</h2>
+                    <ul id="projects"></ul>
+                </section>
+
+                <section class="certifications">
+                    <h2>CERTIFICATIONS</h2>
+                    <ul id="certifications"></ul>
+                </section>
+
+                <div class="download">
+                    <button id="downloadResume">Download Resume</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+
+</html>
