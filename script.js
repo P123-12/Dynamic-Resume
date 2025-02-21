@@ -55,11 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const resumeData = JSON.parse(localStorage.getItem("resumeData"));
 
         if (resumeData) {
-            document.getElementById("name").innerText = resumeData.name || "N/A";
-            document.getElementById("profile").innerText = resumeData.profile || "N/A";
-            document.getElementById("contact").innerText = `📞 ${resumeData.contact || "N/A"}`;
-            document.getElementById("email").innerText = `✉️ ${resumeData.email || "N/A"}`;
-            document.getElementById("address").innerText = `🏠 ${resumeData.address || "N/A"}`;
+            document.getElementById("name").innerText = resumeData.name || "";
+            document.getElementById("profile").innerText = resumeData.profile || "";
+            document.getElementById("contact").innerText = `📞 ${resumeData.contact || ""}`;
+            document.getElementById("email").innerText = `✉️ ${resumeData.email || ""}`;
+            document.getElementById("address").innerText = `🏠 ${resumeData.address || ""}`;
 
             document.getElementById("languages").innerHTML = resumeData.languages.map(lang => `<li>${lang}</li>`).join('');
             document.getElementById("hobbies").innerHTML = resumeData.hobbies.map(hobby => `<li>${hobby}</li>`).join('');
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const educationSection = document.getElementById("education");
             if (educationSection) {
                 educationSection.innerHTML = resumeData.education.map(edu =>
-                    `<p>${edu.school}, ${edu.degree}, CGPA: ${edu.cgpa} (${edu.startDate} - ${edu.endDate})</p>`
+                    `<p>${edu.school}  ${edu.degree} CGPA: ${edu.cgpa} (${edu.startDate} - ${edu.endDate})</p>`
                 ).join('');
             }
 
