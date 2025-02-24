@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const educationSection = document.getElementById("education");
             if (educationSection) {
                 educationSection.innerHTML = resumeData.education.map(edu =>
-                    `<p>${edu.school}  ${edu.degree} CGPA: ${edu.cgpa} (${edu.startDate} - ${edu.endDate})</p>`
+                    `<p><strong>${edu.school}</strong>  <b>${edu.degree}</b>  ${edu.cgpa} (${edu.startDate} - ${edu.endDate})</p>`
                 ).join('');
             }
 
