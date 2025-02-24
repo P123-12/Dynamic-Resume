@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("profile").innerText = resumeData.profile || "";
             document.getElementById("contact").innerText = `📞 ${resumeData.contact || ""}`;
             document.getElementById("email").innerText = `✉️ ${resumeData.email || ""}`;
-            document.getElementById("address").innerText = `🏠 ${resumeData.address || ""}`;
+            document.getElementById("address").innerText = ` ${resumeData.address || ""}`;
 
             document.getElementById("languages").innerHTML = resumeData.languages.map(lang => `<li>${lang}</li>`).join('');
             document.getElementById("hobbies").innerHTML = resumeData.hobbies.map(hobby => `<li>${hobby}</li>`).join('');
