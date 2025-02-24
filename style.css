@@ -178,7 +178,7 @@
                 
                 /* Download Button */
                 .download button {
-                    background-color: #715350;
+                    background-color:  rgb(174, 145, 147);;
                     color: black;
                     border: solid;
                     border-radius: 5px;
